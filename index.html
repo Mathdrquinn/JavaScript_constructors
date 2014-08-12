@@ -6,6 +6,38 @@
 </head>
 <body>
   <h1>Open the console to find more.</h1>
+
+  <form action="">
+    <p>Select a type:
+      <br/>
+      <input class="constructType" id ="Person" type="radio" name="type" value="Person" /> <label for="Person">Person</label>
+      <input class="constructType" id="Theif" type="radio" name="type" value="Theif" /> <label for="Person">Theif</label>
+      <input class="constructType" id="Hacker" type="radio" name="type" value="Hacker" /> <label for="Person">Hacker</label>
+    </p>
+    <p>
+      Select a name:
+      <input class="nameProp" id ="name" type="text" name="name" size="20", maxlength="15" required="required">
+    </p>
+    <p>
+      How much money is in your pocket?
+      <input class="pocketCashProp" type="number" name="pocketCash" size="20", maxlength="10" required="required">
+    </p>
+    <p>
+      How much money do you have stored in bank accounts?
+      <input class="pocketCashProp" type="number" name="pocketCash" size="20", maxlength="10" required="required">
+    </p>
+    <p>
+      <label class="rating" id="riskForm" for="riskFactor">What is your risk factor (1-10)
+      <input id="riskFactor" type="range" min="1" max="10"><span id="riskFactorValue"></span></label>
+      <br/>
+      <label class="rating" id="skillForm" for="skill">What is your skill level (1-10)
+      <input id="skill" type="range" min="1" max="10"><span id="skillValue"></span></label>
+    </p>
+    <input id="submitType" type="submit" value="Create" method=""/>
+  </form>
+
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
   <script type="text/javascript" src="main.js"></script>
+  <script src="test.js"></script>
 </body>
 </html>
